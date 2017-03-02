@@ -1,2 +1,2 @@
 <?php
-header('Location:way/way_2/index.php');
+header('Location:way/way_1/index.php');
