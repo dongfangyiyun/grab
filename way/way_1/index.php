@@ -4,13 +4,11 @@ require 'vendor/autoload.php';
 use QL\QueryList;
 
 // 1.需要采集网站的url;
-$grab_url = 'http://mobile.csdn.net/';
+$grab_url = 'https://movie.douban.com/subject/26182910/?from=showing';
 
 // 2.编写采集规则;
 $rules = array(
-    'title' => array('.unit h1 a', 'text'),
-    'url'   => array('.unit h1 a', 'href'),
-    'time'  => array('.unit h4 .ago', 'text'),
+	'title' => array('.comment-item .comment p', 'text'),
 );
 
 // 3.运行采集
